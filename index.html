@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avsha — Data Cleaning & Spreadsheet Specialist</title>
+<style>
+  :root{
+    --ink:#13151a; --muted:#5b6470; --line:#e6e8ec; --bg:#ffffff;
+    --soft:#f6f7f9; --accent:#1dbf73; --accent-dark:#159a5c; --bad:#e0563f;
+    --radius:14px; --maxw:980px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  a{color:inherit}
+
+  /* Hero */
+  header{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--accent-dark);background:#e8f8f0;
+    padding:6px 12px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+  h1 .light{color:var(--muted);font-weight:600}
+  .lead{font-size:19px;color:var(--muted);max-width:640px}
+  .cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;
+    text-decoration:none;font-size:15px;transition:.15s}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:var(--accent-dark)}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{background:var(--soft)}
+
+  section{padding:54px 0}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--accent-dark);margin-bottom:10px}
+  h2{font-size:28px;letter-spacing:-.01em;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:28px;max-width:620px}
+
+  /* Services */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+  .card h3{font-size:17px;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--muted)}
+  .card .price{margin-top:14px;font-size:14px;font-weight:600;color:var(--ink)}
+
+  /* Demo */
+  .demo{background:var(--soft);border-radius:18px;padding:30px;border:1px solid var(--line)}
+  .demo-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .panel .tag{padding:10px 14px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+  .tag.before{color:var(--bad);border-bottom:1px solid var(--line)}
+  .tag.after{color:var(--accent-dark);border-bottom:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th{background:#fafbfc;font-weight:600;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  td.flag{color:var(--bad)}
+  .demo-note{margin-top:18px;font-size:14px;color:var(--muted)}
+  .demo-note strong{color:var(--ink)}
+  .scroll{overflow-x:auto}
+
+  /* About */
+  .about p{max-width:680px;color:var(--muted);font-size:16px;margin-bottom:14px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .chip{font-size:13px;background:var(--soft);border:1px solid var(--line);
+    padding:6px 12px;border-radius:999px;color:var(--ink)}
+
+  /* Contact */
+  .contact{background:var(--ink);color:#fff;border-radius:18px;padding:40px;text-align:center}
+  .contact h2{color:#fff}
+  .contact p{color:#aeb6c2;margin-bottom:22px}
+  .contact .btn-primary{background:var(--accent)}
+
+  footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);text-align:center}
+
+  @media(max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .demo-cols{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Data Cleaning · Excel · Google Sheets</span>
+    <h1>Messy spreadsheets in.<br><span class="light">Clean, reliable data out.</span></h1>
+    <p class="lead">I turn disorganized exports, contact lists, and data dumps into clean, deduplicated,
+      consistently formatted files you can actually use — usually within 24 hours.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#contact">Get a free sample clean</a>
+      <a class="btn btn-ghost" href="#demo">See before &amp; after</a>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">What I do</div>
+    <h2>Services</h2>
+    <p class="sub">Three core services, priced per project so fast turnaround works in your favor.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Data Cleaning &amp; Formatting</h3>
+        <p>Deduplication, standardized dates / phones / names, fixed columns, removed junk rows, validated emails — plus a summary of every change.</p>
+        <div class="price">From $25</div>
+      </div>
+      <div class="card">
+        <h3>Spreadsheet Automation</h3>
+        <p>Formulas, pivot tables, conditional formatting, and auto-updating Excel / Google Sheets dashboards built around your data.</p>
+        <div class="price">From $40</div>
+      </div>
+      <div class="card">
+        <h3>Lead List Building</h3>
+        <p>Targeted, verified contact lists for a defined niche — name, company, role, and validated email, segmented and ready for outreach.</p>
+        <div class="price">From $40</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <div class="kicker">Proof</div>
+    <h2>Before &amp; after</h2>
+    <p class="sub">A real example: a customer list riddled with duplicates, broken formats, and bad data — cleaned into something usable.</p>
+    <div class="demo">
+      <div class="demo-cols">
+        <div class="panel">
+          <div class="tag before">● Before — raw export</div>
+          <div class="scroll">
+          <table>
+            <tr><th>Name</th><th>Email</th><th>Date</th><th>Country</th><th>Revenue</th></tr>
+            <tr><td>john smith </td><td class="flag">JOHN.SMITH@gmail</td><td>01/05/2025</td><td>usa</td><td>$1,200</td></tr>
+            <tr><td>Jane DOE</td><td>jane.doe@yahoo.com</td><td>2025-02-11</td><td>United States</td><td>$1200</td></tr>
+            <tr><td>Jane DOE</td><td>jane.doe@yahoo.com</td><td>2025-02-11</td><td>US</td><td>1200</td></tr>
+            <tr><td class="flag">(blank)</td><td>emily.wong@startup.io</td><td>2025/04/02</td><td>U.S.A</td><td>5,000</td></tr>
+            <tr><td>Tom O'Brien</td><td class="flag">tom.obrien@@mail</td><td>5/9/2025</td><td>United states</td><td>$1,200</td></tr>
+          </table>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="tag after">● After — cleaned</div>
+          <div class="scroll">
+          <table>
+            <tr><th>Name</th><th>Email</th><th>Date</th><th>Country</th><th>Revenue (USD)</th></tr>
+            <tr><td>John Smith</td><td>john.smith@gmail.com</td><td>2025-01-05</td><td>United States</td><td>1200</td></tr>
+            <tr><td>Jane Doe</td><td>jane.doe@yahoo.com</td><td>2025-02-11</td><td>United States</td><td>1200</td></tr>
+            <tr><td>Emily Wong</td><td>emily.wong@startup.io</td><td>2025-04-02</td><td>United States</td><td>5000</td></tr>
+            <tr><td>Tom O'Brien</td><td>tom.obrien@mail.com</td><td>2025-05-09</td><td>United States</td><td>1200</td></tr>
+          </table>
+          </div>
+        </div>
+      </div>
+      <p class="demo-note"><strong>Fixed:</strong> removed duplicate rows · standardized names &amp; capitalization ·
+        ISO date format · consolidated country labels · stripped currency symbols to a single format ·
+        corrected and validated emails · recovered the blank name from its valid duplicate.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="kicker">Background</div>
+    <h2>About</h2>
+    <p>I've spent 8+ years across fintech, SaaS, and real-estate-tech companies working hands-on with large
+      datasets — building data pipelines in SQL and BigQuery, forecasting models in Python, and CRM and
+      reporting systems. I bring that same rigor to every cleanup job: accurate, consistent, and fast.</p>
+    <p>Whether it's a 500-row contact list or a 50,000-row export, you get back a tidy file plus a clear
+      summary of exactly what changed — so you can trust the result.</p>
+    <div class="chips">
+      <span class="chip">Excel</span><span class="chip">Google Sheets</span><span class="chip">CSV</span>
+      <span class="chip">SQL</span><span class="chip">Data validation</span><span class="chip">Deduplication</span>
+      <span class="chip">Dashboards</span><span class="chip">Lead enrichment</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Send me your file</h2>
+      <p>Not sure where to start? Send 20–30 rows and I'll clean them for free, so you can see the quality first.</p>
+      <a class="btn btn-primary" href="mailto:avientes@gmail.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Avsha · Data Cleaning &amp; Spreadsheet Specialist</div>
+</footer>
+
+</body>
+</html>
